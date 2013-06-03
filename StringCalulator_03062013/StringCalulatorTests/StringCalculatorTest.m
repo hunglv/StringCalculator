@@ -23,6 +23,12 @@ describe(@"StringCalculator test", ^{
             NSInteger val = [obj add:@"123"];
             [[theValue(val) should] equal:theValue(123)];
         });
+        
+        it(@"add a string with 2 numbers", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            NSInteger val = [obj add:@"1,2"];
+            [[theValue(val) should] equal:theValue(3)];
+        });
     });
 });
 SPEC_END
