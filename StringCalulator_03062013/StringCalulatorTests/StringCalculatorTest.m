@@ -11,6 +11,12 @@
 
 SPEC_BEGIN(StringCalculatorTest)
 describe(@"StringCalculator test", ^{
-        
+    context(@"Create a simple String calculator", ^{
+        it(@"add an empty string", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            NSInteger val = [obj add:@""];
+            [[theValue(val) should] equal:theValue(0)];
+        });
+    });
 });
 SPEC_END
