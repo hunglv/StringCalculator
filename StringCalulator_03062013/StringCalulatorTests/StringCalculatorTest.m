@@ -30,5 +30,13 @@ describe(@"StringCalculator test", ^{
             [[theValue(val) should] equal:theValue(3)];
         });
     });
+    
+    context(@"Allow the Add method to handle an unknown amount of numbers", ^{
+        it(@"add a string with 5 numbers", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            NSInteger val = [obj add:@"1,2,3,4,5"];
+            [[theValue(val) should] equal:theValue(15)];
+        });
+    });
 });
 SPEC_END
