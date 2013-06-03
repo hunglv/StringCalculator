@@ -11,10 +11,11 @@
 @implementation StringCalculator
 
 -(NSInteger)add:(NSString *)addedString {
+    NSInteger result = 0;
     if (addedString.length > 0) {
-        return [addedString integerValue];
+        result = [addedString integerValue];
     }
-    return 0;
+    return result;
 }
 
 @end
