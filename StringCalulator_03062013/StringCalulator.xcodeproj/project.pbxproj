@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28B3BD8917533C6700C26110 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8817533C6700C26110 /* UIKit.framework */; };
+		28B3BD8B17533C6700C26110 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8A17533C6700C26110 /* Foundation.framework */; };
+		28B3BD8D17533C6700C26110 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8C17533C6700C26110 /* CoreGraphics.framework */; };
+		28B3BD9317533C6700C26110 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28B3BD9117533C6700C26110 /* InfoPlist.strings */; };
+		28B3BD9517533C6700C26110 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B3BD9417533C6700C26110 /* main.m */; };
+		28B3BD9917533C6700C26110 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B3BD9817533C6700C26110 /* AppDelegate.m */; };
+		28B3BD9B17533C6700C26110 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B3BD9A17533C6700C26110 /* Default.png */; };
+		28B3BD9D17533C6700C26110 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B3BD9C17533C6700C26110 /* Default@2x.png */; };
+		28B3BD9F17533C6700C26110 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28B3BD9E17533C6700C26110 /* Default-568h@2x.png */; };
+		28B3BDA717533C6700C26110 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BDA617533C6700C26110 /* SenTestingKit.framework */; };
+		28B3BDA817533C6700C26110 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8817533C6700C26110 /* UIKit.framework */; };
+		28B3BDA917533C6700C26110 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8A17533C6700C26110 /* Foundation.framework */; };
+		28B3BDB117533C6700C26110 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28B3BDAF17533C6700C26110 /* InfoPlist.strings */; };
+		28B3BDBE17533D6800C26110 /* StringCalculatorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B3BDBD17533D6800C26110 /* StringCalculatorTest.m */; };
+		28B3BDC117533D7900C26110 /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B3BDC017533D7900C26110 /* StringCalculator.m */; };
+		5655C048137644A78931B476 /* libPods-StringCalulatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB0518155E74A7B9474BE1D /* libPods-StringCalulatorTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28B3BDAA17533C6700C26110 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28B3BD7D17533C6700C26110 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28B3BD8417533C6700C26110;
+			remoteInfo = StringCalulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28B3BD8517533C6700C26110 /* StringCalulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B3BD8817533C6700C26110 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28B3BD8A17533C6700C26110 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		28B3BD8C17533C6700C26110 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28B3BD9017533C6700C26110 /* StringCalulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StringCalulator-Info.plist"; sourceTree = "<group>"; };
+		28B3BD9217533C6700C26110 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28B3BD9417533C6700C26110 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28B3BD9617533C6700C26110 /* StringCalulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StringCalulator-Prefix.pch"; sourceTree = "<group>"; };
+		28B3BD9717533C6700C26110 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28B3BD9817533C6700C26110 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28B3BD9A17533C6700C26110 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		28B3BD9C17533C6700C26110 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		28B3BD9E17533C6700C26110 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28B3BDA517533C6700C26110 /* StringCalulatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalulatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B3BDA617533C6700C26110 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		28B3BDAE17533C6700C26110 /* StringCalulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StringCalulatorTests-Info.plist"; sourceTree = "<group>"; };
+		28B3BDB017533C6700C26110 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28B3BDBD17533D6800C26110 /* StringCalculatorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculatorTest.m; sourceTree = "<group>"; };
+		28B3BDBF17533D7900C26110 /* StringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCalculator.h; sourceTree = "<group>"; };
+		28B3BDC017533D7900C26110 /* StringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculator.m; sourceTree = "<group>"; };
+		97A2E7837C304669B763E6AB /* Pods-StringCalulatorTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringCalulatorTests.xcconfig"; path = "Pods/Pods-StringCalulatorTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		FBB0518155E74A7B9474BE1D /* libPods-StringCalulatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StringCalulatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28B3BD8217533C6700C26110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B3BD8917533C6700C26110 /* UIKit.framework in Frameworks */,
+				28B3BD8B17533C6700C26110 /* Foundation.framework in Frameworks */,
+				28B3BD8D17533C6700C26110 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B3BDA117533C6700C26110 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B3BDA717533C6700C26110 /* SenTestingKit.framework in Frameworks */,
+				28B3BDA817533C6700C26110 /* UIKit.framework in Frameworks */,
+				28B3BDA917533C6700C26110 /* Foundation.framework in Frameworks */,
+				5655C048137644A78931B476 /* libPods-StringCalulatorTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28B3BD7C17533C6700C26110 = {
+			isa = PBXGroup;
+			children = (
+				28B3BD8E17533C6700C26110 /* StringCalulator */,
+				28B3BDAC17533C6700C26110 /* StringCalulatorTests */,
+				28B3BD8717533C6700C26110 /* Frameworks */,
+				28B3BD8617533C6700C26110 /* Products */,
+				97A2E7837C304669B763E6AB /* Pods-StringCalulatorTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		28B3BD8617533C6700C26110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28B3BD8517533C6700C26110 /* StringCalulator.app */,
+				28B3BDA517533C6700C26110 /* StringCalulatorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28B3BD8717533C6700C26110 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28B3BD8817533C6700C26110 /* UIKit.framework */,
+				28B3BD8A17533C6700C26110 /* Foundation.framework */,
+				28B3BD8C17533C6700C26110 /* CoreGraphics.framework */,
+				28B3BDA617533C6700C26110 /* SenTestingKit.framework */,
+				FBB0518155E74A7B9474BE1D /* libPods-StringCalulatorTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28B3BD8E17533C6700C26110 /* StringCalulator */ = {
+			isa = PBXGroup;
+			children = (
+				28B3BD9717533C6700C26110 /* AppDelegate.h */,
+				28B3BD9817533C6700C26110 /* AppDelegate.m */,
+				28B3BD8F17533C6700C26110 /* Supporting Files */,
+				28B3BDBF17533D7900C26110 /* StringCalculator.h */,
+				28B3BDC017533D7900C26110 /* StringCalculator.m */,
+			);
+			path = StringCalulator;
+			sourceTree = "<group>";
+		};
+		28B3BD8F17533C6700C26110 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28B3BD9017533C6700C26110 /* StringCalulator-Info.plist */,
+				28B3BD9117533C6700C26110 /* InfoPlist.strings */,
+				28B3BD9417533C6700C26110 /* main.m */,
+				28B3BD9617533C6700C26110 /* StringCalulator-Prefix.pch */,
+				28B3BD9A17533C6700C26110 /* Default.png */,
+				28B3BD9C17533C6700C26110 /* Default@2x.png */,
+				28B3BD9E17533C6700C26110 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28B3BDAC17533C6700C26110 /* StringCalulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				28B3BDAD17533C6700C26110 /* Supporting Files */,
+				28B3BDBD17533D6800C26110 /* StringCalculatorTest.m */,
+			);
+			path = StringCalulatorTests;
+			sourceTree = "<group>";
+		};
+		28B3BDAD17533C6700C26110 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28B3BDAE17533C6700C26110 /* StringCalulatorTests-Info.plist */,
+				28B3BDAF17533C6700C26110 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28B3BD8417533C6700C26110 /* StringCalulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B3BDB717533C6700C26110 /* Build configuration list for PBXNativeTarget "StringCalulator" */;
+			buildPhases = (
+				28B3BD8117533C6700C26110 /* Sources */,
+				28B3BD8217533C6700C26110 /* Frameworks */,
+				28B3BD8317533C6700C26110 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StringCalulator;
+			productName = StringCalulator;
+			productReference = 28B3BD8517533C6700C26110 /* StringCalulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28B3BDA417533C6700C26110 /* StringCalulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B3BDBA17533C6700C26110 /* Build configuration list for PBXNativeTarget "StringCalulatorTests" */;
+			buildPhases = (
+				BE28F51F64644312B9F3DE4E /* Check Pods Manifest.lock */,
+				28B3BDA017533C6700C26110 /* Sources */,
+				28B3BDA117533C6700C26110 /* Frameworks */,
+				28B3BDA217533C6700C26110 /* Resources */,
+				28B3BDA317533C6700C26110 /* ShellScript */,
+				D9C8AF776DBA459694DE670B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28B3BDAB17533C6700C26110 /* PBXTargetDependency */,
+			);
+			name = StringCalulatorTests;
+			productName = StringCalulatorTests;
+			productReference = 28B3BDA517533C6700C26110 /* StringCalulatorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28B3BD7D17533C6700C26110 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "El Nino";
+			};
+			buildConfigurationList = 28B3BD8017533C6700C26110 /* Build configuration list for PBXProject "StringCalulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28B3BD7C17533C6700C26110;
+			productRefGroup = 28B3BD8617533C6700C26110 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28B3BD8417533C6700C26110 /* StringCalulator */,
+				28B3BDA417533C6700C26110 /* StringCalulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28B3BD8317533C6700C26110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B3BD9317533C6700C26110 /* InfoPlist.strings in Resources */,
+				28B3BD9B17533C6700C26110 /* Default.png in Resources */,
+				28B3BD9D17533C6700C26110 /* Default@2x.png in Resources */,
+				28B3BD9F17533C6700C26110 /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B3BDA217533C6700C26110 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B3BDB117533C6700C26110 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28B3BDA317533C6700C26110 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		BE28F51F64644312B9F3DE4E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		D9C8AF776DBA459694DE670B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-StringCalulatorTests-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28B3BD8117533C6700C26110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B3BD9517533C6700C26110 /* main.m in Sources */,
+				28B3BD9917533C6700C26110 /* AppDelegate.m in Sources */,
+				28B3BDC117533D7900C26110 /* StringCalculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B3BDA017533C6700C26110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B3BDBE17533D6800C26110 /* StringCalculatorTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28B3BDAB17533C6700C26110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28B3BD8417533C6700C26110 /* StringCalulator */;
+			targetProxy = 28B3BDAA17533C6700C26110 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28B3BD9117533C6700C26110 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28B3BD9217533C6700C26110 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		28B3BDAF17533C6700C26110 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28B3BDB017533C6700C26110 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28B3BDB517533C6700C26110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28B3BDB617533C6700C26110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28B3BDB817533C6700C26110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalulator/StringCalulator-Prefix.pch";
+				INFOPLIST_FILE = "StringCalulator/StringCalulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		28B3BDB917533C6700C26110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalulator/StringCalulator-Prefix.pch";
+				INFOPLIST_FILE = "StringCalulator/StringCalulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		28B3BDBB17533C6700C26110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A2E7837C304669B763E6AB /* Pods-StringCalulatorTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StringCalulator.app/StringCalulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalulator/StringCalulator-Prefix.pch";
+				INFOPLIST_FILE = "StringCalulatorTests/StringCalulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		28B3BDBC17533C6700C26110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97A2E7837C304669B763E6AB /* Pods-StringCalulatorTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StringCalulator.app/StringCalulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StringCalulator/StringCalulator-Prefix.pch";
+				INFOPLIST_FILE = "StringCalulatorTests/StringCalulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28B3BD8017533C6700C26110 /* Build configuration list for PBXProject "StringCalulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B3BDB517533C6700C26110 /* Debug */,
+				28B3BDB617533C6700C26110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28B3BDB717533C6700C26110 /* Build configuration list for PBXNativeTarget "StringCalulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B3BDB817533C6700C26110 /* Debug */,
+				28B3BDB917533C6700C26110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28B3BDBA17533C6700C26110 /* Build configuration list for PBXNativeTarget "StringCalulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B3BDBB17533C6700C26110 /* Debug */,
+				28B3BDBC17533C6700C26110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28B3BD7D17533C6700C26110 /* Project object */;
+}
