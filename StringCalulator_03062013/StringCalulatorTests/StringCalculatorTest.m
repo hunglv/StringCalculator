@@ -77,7 +77,7 @@ describe(@"StringCalculator test", ^{
             [[theBlock(^{
                 StringCalculator *obj = [[StringCalculator alloc] init];
                 [obj add:@"1,-2,-3"];
-            }) should] raiseWithName:@"AddNegativeNumber" reason:@"add negative number: -2,-3"];
+            }) should] raiseWithName:@"AddNegativeNumber" reason:@"add negative number:-2,-3"];
         });
     });
 });
