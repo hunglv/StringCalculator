@@ -29,6 +29,7 @@
         if (firstSubString.length >= 3 && ([firstSubString rangeOfString:@"//"].location != NSNotFound)) {
             NSString *newDelimter = [firstSubString substringWithRange:NSMakeRange(2, firstSubString.length - 2)];
             delimiter = [NSString stringWithFormat:@"%@%@", delimiter, newDelimter];
+            subStrings = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimiter]];
         }
         
         for (NSString *subString in subStrings) {
