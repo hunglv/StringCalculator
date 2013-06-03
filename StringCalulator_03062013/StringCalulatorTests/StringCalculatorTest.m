@@ -57,5 +57,13 @@ describe(@"StringCalculator test", ^{
             [[theValue(val) should] equal:theValue(15)];
         });
     });
+    
+    context(@"Support different delimiters", ^{
+        it(@"will add new delimiter character", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            [obj add:@"//;\n1"];
+            [[theValue([obj.delimiter rangeOfString:@";"].location != NSNotFound) should] equal:theValue(YES)];
+        });
+    });
 });
 SPEC_END
