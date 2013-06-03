@@ -50,6 +50,12 @@ describe(@"StringCalculator test", ^{
             StringCalculator *obj = [[StringCalculator alloc] init];
             [[theValue([obj.delimiter rangeOfString:@"\n"].location != NSNotFound) should] equal:theValue(YES)];
         });
+        
+        it(@"add a string with new lines character", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            NSInteger val = [obj add:@"1\n2,3,4,5"];
+            [[theValue(val) should] equal:theValue(15)];
+        });
     });
 });
 SPEC_END
