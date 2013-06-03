@@ -23,7 +23,7 @@
 -(NSInteger)add:(NSString *)addedString {
     NSInteger result = 0;
     if (addedString.length > 0) {
-        NSArray *subStrings = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
+        NSArray *subStrings = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimiter]];
         for (NSString *subString in subStrings) {
             result += [subString integerValue];
         }
