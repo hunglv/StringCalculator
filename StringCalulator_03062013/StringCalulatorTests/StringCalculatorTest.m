@@ -45,6 +45,11 @@ describe(@"StringCalculator test", ^{
             [obj.delimiter shouldNotBeNil];
             [[theValue(([obj.delimiter rangeOfString:@","].location != NSNotFound)) should] equal:theValue(YES)];
         });
+        
+        it(@"delimiter object has new line character", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            [[theValue([obj.delimiter rangeOfString:@"\n"].location != NSNotFound) should] equal:theValue(YES)];
+        });
     });
 });
 SPEC_END
