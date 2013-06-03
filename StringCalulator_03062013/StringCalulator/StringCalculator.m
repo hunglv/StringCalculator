@@ -13,7 +13,13 @@
 -(NSInteger)add:(NSString *)addedString {
     NSInteger result = 0;
     if (addedString.length > 0) {
-        result = [addedString integerValue];
+        NSArray *subStrings = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
+        if (subStrings.count == 1) {
+            result = [addedString integerValue];
+        }
+        if (subStrings.count == 2) {
+            result = [[subStrings objectAtIndex:0] integerValue] + [[subStrings objectAtIndex:1] integerValue];
+        }
     }
     return result;
 }
