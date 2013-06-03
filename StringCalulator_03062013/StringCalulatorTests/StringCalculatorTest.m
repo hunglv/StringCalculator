@@ -17,6 +17,12 @@ describe(@"StringCalculator test", ^{
             NSInteger val = [obj add:@""];
             [[theValue(val) should] equal:theValue(0)];
         });
+        
+        it(@"add a simple number", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            NSInteger val = [obj add:@"123"];
+            [[theValue(val) should] equal:theValue(123)];
+        });
     });
 });
 SPEC_END
