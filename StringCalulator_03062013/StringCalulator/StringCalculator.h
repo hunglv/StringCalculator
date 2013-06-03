@@ -12,4 +12,6 @@
 
 -(NSInteger)add:(NSString *)addedString;
 
+@property (nonatomic, strong) NSString *delimiter;
+
 @end

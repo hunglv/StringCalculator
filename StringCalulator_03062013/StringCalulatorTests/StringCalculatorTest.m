@@ -38,5 +38,13 @@ describe(@"StringCalculator test", ^{
             [[theValue(val) should] equal:theValue(15)];
         });
     });
+    
+    context(@"Allow the Add method to handle new lines between numbers (instead of commas)", ^{
+        it(@"object has property with name delimiter with default is comma string", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            [obj.delimiter shouldNotBeNil];
+            [[theValue(([obj.delimiter rangeOfString:@","].location != NSNotFound)) should] equal:theValue(YES)];
+        });
+    });
 });
 SPEC_END

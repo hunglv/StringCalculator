@@ -9,6 +9,15 @@
 #import "StringCalculator.h"
 
 @implementation StringCalculator
+@synthesize delimiter;
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+    }
+    return self;
+}
 
 -(NSInteger)add:(NSString *)addedString {
     NSInteger result = 0;
