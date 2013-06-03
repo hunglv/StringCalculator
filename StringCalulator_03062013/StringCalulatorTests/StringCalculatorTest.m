@@ -64,6 +64,12 @@ describe(@"StringCalculator test", ^{
             [obj add:@"//;\n1"];
             [[theValue([obj.delimiter rangeOfString:@";"].location != NSNotFound) should] equal:theValue(YES)];
         });
+        
+        it(@"add a string with multiple delimiter", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            NSInteger val = [obj add:@"//;\n1,2,3;4;5,6\n7\n8\n9"];
+            [[theValue(val) should] equal:theValue(45)];
+        });
     });
 });
 SPEC_END
