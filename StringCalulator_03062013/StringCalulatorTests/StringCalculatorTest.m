@@ -71,5 +71,14 @@ describe(@"StringCalculator test", ^{
             [[theValue(val) should] equal:theValue(45)];
         });
     });
+    
+    context(@"Calling Add with a negative number will throw an exception “negatives not allowed”", ^{
+        it(@"add a string with negative number will throw an exeption", ^{
+            [[theBlock(^{
+                StringCalculator *obj = [[StringCalculator alloc] init];
+                [obj add:@"1,-2,-3"];
+            }) should] raiseWithName:@"AddNegativeNumber" reason:@"add negative number: -2,-3"];
+        });
+    });
 });
 SPEC_END

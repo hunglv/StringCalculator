@@ -24,8 +24,8 @@
     NSInteger result = 0;
     if (addedString.length > 0) {
         NSArray *subStrings = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimiter]];
-        
         NSString *firstSubString = [subStrings objectAtIndex:0];
+        
         if (firstSubString.length >= 3 && ([firstSubString rangeOfString:@"//"].location != NSNotFound)) {
             NSString *newDelimter = [firstSubString substringWithRange:NSMakeRange(2, firstSubString.length - 2)];
             delimiter = [NSString stringWithFormat:@"%@%@", delimiter, newDelimter];
