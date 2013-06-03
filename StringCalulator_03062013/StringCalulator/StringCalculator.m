@@ -15,7 +15,7 @@
 {
     self = [super init];
     if (self) {
-        delimiter = [NSString stringWithFormat:@","];
+        delimiter = [NSString stringWithFormat:@",\n"];
     }
     return self;
 }
