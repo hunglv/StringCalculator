@@ -10,4 +10,8 @@
 
 @interface StringCalculator : NSObject
 
+- (NSInteger)add:(NSString *)addedString;
+
+@property (nonatomic, strong) NSMutableString *delimter;
+
 @end
