@@ -88,5 +88,13 @@ describe(@"StringCalculator test", ^{
         });
     });
     
+    context(@"Delimiters can be of any length with the following format", ^{
+        it(@"add with new delimter", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            [obj add:@"//[$$$]\n1,2,3"];
+            [[theValue([obj.delimter rangeOfString:@"$$$"].location != NSNotFound) should] equal:theValue(YES)];
+        });
+    });
+    
 });
 SPEC_END
