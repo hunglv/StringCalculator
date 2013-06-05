@@ -94,6 +94,22 @@ describe(@"StringCalculator test", ^{
             [obj add:@"//[$$$]\n1,2,3"];
             [[theValue([obj.delimter rangeOfString:@"$$$"].location != NSNotFound) should] equal:theValue(YES)];
         });
+        
+        // Test to ensure new delimter work
+        it(@"add a string with new delimiter", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            NSInteger val = [obj add:@"//[%%%]\n1,2%%%3%%%4"];
+            [[theValue(val) should] equal:theValue(10)];
+        });
+    });
+    
+    context(@"Allow multiple delimiters", ^{
+        it(@"add with new delimter", ^{
+            StringCalculator *obj = [[StringCalculator alloc] init];
+            [obj add:@"//[$$$][;]\n1,2,3"];
+            [[theValue([obj.delimter rangeOfString:@"$$$"].location != NSNotFound) should] equal:theValue(YES)];
+             [[theValue([obj.delimter rangeOfString:@";"].location != NSNotFound) should] equal:theValue(YES)];
+        });
     });
     
 });
