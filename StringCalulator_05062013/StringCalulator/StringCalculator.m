@@ -27,8 +27,15 @@
         
         NSString *firstStringAfterSplit = [subStringArrFromAddedString objectAtIndex:0];
         if ([firstStringAfterSplit rangeOfString:@"//"].length == 2 && firstStringAfterSplit.length > 2) {
-            NSString *newDelimterChar = [firstStringAfterSplit substringWithRange:NSMakeRange(2, 1)];
-            [delimter appendString:newDelimterChar];
+            
+            NSArray *arrayDelimter = [[firstStringAfterSplit substringFromIndex:2] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"[]"]];
+            
+            for (NSString *delimterString in arrayDelimter) {
+                if (delimterString.length > 0) {
+                    [delimter appendString:delimterString];
+                    break;
+                }
+            }
             subStringArrFromAddedString = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimter]];
         }
         
