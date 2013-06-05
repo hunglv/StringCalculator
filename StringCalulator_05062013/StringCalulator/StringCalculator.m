@@ -33,7 +33,6 @@
             for (NSString *delimterString in arrayDelimter) {
                 if (delimterString.length > 0) {
                     [delimter appendString:delimterString];
-                    break;
                 }
             }
             subStringArrFromAddedString = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimter]];
