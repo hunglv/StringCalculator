@@ -20,36 +20,48 @@
     return self;
 }
 
+- (NSArray *)parserString:(NSString *)addedString {
+    NSArray *subStringArrFromAddedString = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimter]];
+    
+    NSString *firstStringAfterSplit = [subStringArrFromAddedString objectAtIndex:0];
+    if ([firstStringAfterSplit rangeOfString:@"//"].length == 2 && firstStringAfterSplit.length > 2) {
+        
+        NSArray *arrayDelimter = [[firstStringAfterSplit substringFromIndex:2] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"[]"]];
+        
+        for (NSString *delimterString in arrayDelimter) {
+            if (delimterString.length > 0) {
+                [delimter appendString:delimterString];
+            }
+        }
+        subStringArrFromAddedString = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimter]];
+    }
+    return subStringArrFromAddedString;
+}
+
+- (NSMutableArray *)manipulateWithResult:(NSInteger *)re_p subStringArrFromAddedString:(NSArray *)subStringArrFromAddedString {
+    NSMutableArray *negativeNumbers = [[NSMutableArray alloc] init];
+    
+    for (NSString *stringNumber in subStringArrFromAddedString) {
+        if ([stringNumber integerValue] < 0) {
+            [negativeNumbers addObject:@([stringNumber integerValue])];
+            continue;
+        }
+        if ([stringNumber integerValue] > 1000) {
+            continue;
+        }
+        *re_p += [stringNumber integerValue];
+    }
+    return negativeNumbers;
+}
+
 -(NSInteger)add:(NSString *)addedString {
     NSInteger re = 0;
     if (addedString.length) {
-        NSArray *subStringArrFromAddedString = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimter]];
+        NSArray *subStringArrFromAddedString;
+        subStringArrFromAddedString = [self parserString:addedString];
         
-        NSString *firstStringAfterSplit = [subStringArrFromAddedString objectAtIndex:0];
-        if ([firstStringAfterSplit rangeOfString:@"//"].length == 2 && firstStringAfterSplit.length > 2) {
-            
-            NSArray *arrayDelimter = [[firstStringAfterSplit substringFromIndex:2] componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"[]"]];
-            
-            for (NSString *delimterString in arrayDelimter) {
-                if (delimterString.length > 0) {
-                    [delimter appendString:delimterString];
-                }
-            }
-            subStringArrFromAddedString = [addedString componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimter]];
-        }
-        
-        NSMutableArray *negativeNumbers = [[NSMutableArray alloc] init];
-        
-        for (NSString *stringNumber in subStringArrFromAddedString) {
-            if ([stringNumber integerValue] < 0) {
-                [negativeNumbers addObject:@([stringNumber integerValue])];
-                continue;
-            }
-            if ([stringNumber integerValue] > 1000) {
-                continue;
-            }
-            re += [stringNumber integerValue];
-        }
+        NSMutableArray *negativeNumbers;
+        negativeNumbers = [self manipulateWithResult:&re subStringArrFromAddedString:subStringArrFromAddedString];
         
         if (negativeNumbers.count > 0) {
             NSMutableString *reason = [[NSMutableString alloc] initWithFormat:@"add negative numbers:"];
