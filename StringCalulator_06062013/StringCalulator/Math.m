@@ -11,7 +11,7 @@
 @implementation Math
 
 -(NSNumber *)sumArray:(NSArray *)array {
-    return nil;
+    return @0;
 }
 
 @end
