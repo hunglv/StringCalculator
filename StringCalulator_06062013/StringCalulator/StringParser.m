@@ -11,7 +11,9 @@
 @implementation StringParser
 
 -(NSArray *)stringParser:(NSString *)string {
-    return nil;
+    if (string.length == 0) {
+        return @[string];
+    }
 }
 
 @end
