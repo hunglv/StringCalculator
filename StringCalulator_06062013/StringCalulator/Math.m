@@ -10,6 +10,8 @@
 
 @implementation Math
 
+@synthesize negativeNumber;
+
 -(NSNumber *)sumArray:(NSArray *)array {
     NSInteger val = 0;
     for (NSString *numberString in array) {

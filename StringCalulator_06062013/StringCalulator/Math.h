@@ -12,4 +12,6 @@
 
 - (NSNumber *)sumArray:(NSArray *)array;
 
+@property (nonatomic, strong) NSMutableArray *negativeNumber;
+
 @end

@@ -96,7 +96,7 @@ describe(@"StringCalculator test", ^{
             [parser stub:@selector(stringParser:) andReturn:arrayStringAfterParser withArguments:addedString];
             NSInteger re = 7;
             [math stub:@selector(sumArray:) andReturn:@(re) withArguments:arrayStringAfterParser];
-            
+            [math stub:@selector(negativeNumber) andReturn:nil];
             NSInteger val = [obj add:addedString];
             [[theValue(val) should] equal:theValue(re)];
         });
@@ -110,6 +110,13 @@ describe(@"StringCalculator test", ^{
             
             NSInteger val = [obj add:addedString];
             [[theValue(val) should] equal:theValue(re)];
+        });
+        
+        it(@"Calling Add with a negative number will throw an exception", ^{
+            [[theBlock(^{
+                [math stub:@selector(negativeNumber) andReturn:@[@(-2), @(-3)]];
+                [obj add:@"1,-2,-3"];
+            }) should] raiseWithName:@"AddNegativeNumber" reason:@"negative numbers:-2,-3"];
         });
     });
 });
