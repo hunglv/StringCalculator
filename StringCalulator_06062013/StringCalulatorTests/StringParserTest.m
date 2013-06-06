@@ -11,23 +11,13 @@
 
 SPEC_BEGIN(StringParserTest)
 describe(@"StringParser test", ^{
-    __block StringParser *_instance = nil;
-    
-    beforeAll(^{
-        
-    });
-    
-    afterAll(^{
-        _instance = nil;
-    });
-    
-    beforeEach(^{
-        
-    });
-    
-    afterEach(^{
-        _instance = nil;
-    });
-    
+   context(@"test for funciton stringParser", ^{
+       it(@"parse empty string", ^{
+           StringParser *pa = [[StringParser alloc] init];
+           NSArray *expect = @[@""];
+           NSArray *reArray = [pa stringParser:@""];
+           [[expect should] equal:reArray];
+       });
+   });
 });
 SPEC_END
