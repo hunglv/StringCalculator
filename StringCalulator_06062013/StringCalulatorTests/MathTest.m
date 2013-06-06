@@ -12,7 +12,11 @@
 SPEC_BEGIN(MathTest)
 describe(@"Math test", ^{
    context(@"Test funciton sumArray", ^{
-       
+       it(@"Input array with empty string object", ^{
+           Math *obj = [[Math alloc] init];
+           NSNumber *val = [obj sumArray:@[@""]];
+           [[val should] equal:@0];
+       });
    });
 });
 SPEC_END
