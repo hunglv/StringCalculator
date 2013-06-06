@@ -20,7 +20,12 @@
         
         NSString *firstString = [subArray objectAtIndex:0];
         if (firstString.length > 2 && [firstString rangeOfString:@"//"].location != NSNotFound) {
-            NSString *newDelimter = [firstString substringWithRange:NSMakeRange(2, 1)];
+            NSString *newDelimter;
+            if ([firstString rangeOfString:@"//["].location != NSNotFound) {
+                newDelimter = [firstString substringWithRange:NSMakeRange(3, firstString.length - 4)];
+            } else {
+                newDelimter = [firstString substringWithRange:NSMakeRange(2, 1)];
+            }
             [delimiterString appendString:newDelimter];
             subArray = [string componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimiterString]];
         }
