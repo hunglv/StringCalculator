@@ -46,6 +46,13 @@ describe(@"StringParser test", ^{
            NSArray *reArray = [pa stringParser:@"//[;;;]\n1;;;2,3"];
            [[expect should] equal:reArray];
        });
+       
+       it(@"parse a string with new multiple delimters are defined", ^{
+           StringParser *pa = [[StringParser alloc] init];
+           NSArray *expect = @[@"1", @"2", @"3", @"4"];
+           NSArray *reArray = [pa stringParser:@"//[;;;][*]\n1;;;2*3,4"];
+           [[expect should] equal:reArray];
+       });
    });
 });
 SPEC_END
