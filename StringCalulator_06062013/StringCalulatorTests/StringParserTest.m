@@ -25,6 +25,13 @@ describe(@"StringParser test", ^{
            NSArray *reArray = [pa stringParser:@"1,2,3"];
            [[expect should] equal:reArray];
        });
+       
+       it(@"parse a string with commas, new line is delimiter", ^{
+           StringParser *pa = [[StringParser alloc] init];
+           NSArray *expect = @[@"1", @"2", @"3"];
+           NSArray *reArray = [pa stringParser:@"1\n2,3"];
+           [[expect should] equal:reArray];
+       });
    });
 });
 SPEC_END
