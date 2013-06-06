@@ -11,9 +11,11 @@
 @implementation StringParser
 
 -(NSArray *)stringParser:(NSString *)string {
+    NSMutableArray *result = [[NSMutableArray alloc] init];;
     if (string.length == 0) {
-        return @[string];
+        [result addObject:string];
     }
+    return result;
 }
 
 @end
