@@ -10,4 +10,23 @@
 
 @implementation StringCalculator
 
+@synthesize parser;
+@synthesize math;
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        parser = [[StringParser alloc] init];
+        math = [[Math alloc] init];
+    }
+    return self;
+}
+
+- (NSInteger)add:(NSString *)addedString {
+    NSArray *stringArray = [parser stringParser:addedString];
+    NSNumber *sumNumber = [math sumArray:stringArray];
+    return [sumNumber integerValue];
+}
+
 @end

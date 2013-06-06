@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StringParser.h"
+#import "Math.h"
 
 @interface StringCalculator : NSObject
+
+@property (nonatomic, strong) StringParser *parser;
+@property (nonatomic, strong) Math *math;
+
+- (NSInteger)add:(NSString *)addedString;
 
 @end

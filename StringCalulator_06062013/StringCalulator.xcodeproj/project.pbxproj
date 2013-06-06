@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		289D54FD176065CD002C74E7 /* StringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D54FC176065CD002C74E7 /* StringParser.m */; };
+		289D5500176065DA002C74E7 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D54FF176065DA002C74E7 /* Math.m */; };
+		289D550217606C20002C74E7 /* MathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D550117606C20002C74E7 /* MathTest.m */; };
 		28B3BD8917533C6700C26110 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8817533C6700C26110 /* UIKit.framework */; };
 		28B3BD8B17533C6700C26110 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8A17533C6700C26110 /* Foundation.framework */; };
 		28B3BD8D17533C6700C26110 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8C17533C6700C26110 /* CoreGraphics.framework */; };
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		289D54FB176065CD002C74E7 /* StringParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringParser.h; sourceTree = "<group>"; };
+		289D54FC176065CD002C74E7 /* StringParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringParser.m; sourceTree = "<group>"; };
+		289D54FE176065DA002C74E7 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		289D54FF176065DA002C74E7 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		289D550117606C20002C74E7 /* MathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathTest.m; sourceTree = "<group>"; };
 		28B3BD8517533C6700C26110 /* StringCalulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B3BD8817533C6700C26110 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28B3BD8A17533C6700C26110 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -125,6 +133,10 @@
 				28B3BD8F17533C6700C26110 /* Supporting Files */,
 				28B3BDBF17533D7900C26110 /* StringCalculator.h */,
 				28B3BDC017533D7900C26110 /* StringCalculator.m */,
+				289D54FB176065CD002C74E7 /* StringParser.h */,
+				289D54FC176065CD002C74E7 /* StringParser.m */,
+				289D54FE176065DA002C74E7 /* Math.h */,
+				289D54FF176065DA002C74E7 /* Math.m */,
 			);
 			path = StringCalulator;
 			sourceTree = "<group>";
@@ -148,6 +160,7 @@
 			children = (
 				28B3BDAD17533C6700C26110 /* Supporting Files */,
 				28B3BDBD17533D6800C26110 /* StringCalculatorTest.m */,
+				289D550117606C20002C74E7 /* MathTest.m */,
 			);
 			path = StringCalulatorTests;
 			sourceTree = "<group>";
@@ -303,6 +316,8 @@
 				28B3BD9517533C6700C26110 /* main.m in Sources */,
 				28B3BD9917533C6700C26110 /* AppDelegate.m in Sources */,
 				28B3BDC117533D7900C26110 /* StringCalculator.m in Sources */,
+				289D54FD176065CD002C74E7 /* StringParser.m in Sources */,
+				289D5500176065DA002C74E7 /* Math.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28B3BDBE17533D6800C26110 /* StringCalculatorTest.m in Sources */,
+				289D550217606C20002C74E7 /* MathTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
