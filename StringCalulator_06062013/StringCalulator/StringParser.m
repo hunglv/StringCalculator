@@ -17,6 +17,13 @@
     } else {
         NSMutableString *delimiterString = [[NSMutableString alloc] initWithFormat:@",\n"];
         NSArray *subArray = [string componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimiterString]];
+        
+        NSString *firstString = [subArray objectAtIndex:0];
+        if (firstString.length > 2 && [firstString rangeOfString:@"//"].location != NSNotFound) {
+            NSString *newDelimter = [firstString substringWithRange:NSMakeRange(2, 1)];
+            [delimiterString appendString:newDelimter];
+            subArray = [string componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimiterString]];
+        }
         for (NSString *numString in subArray) {
             if ([numString integerValue] != 0) {
                 [result addObject:numString];
