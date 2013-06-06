@@ -17,6 +17,12 @@ describe(@"Math test", ^{
            NSNumber *val = [obj sumArray:@[@""]];
            [[val should] equal:@0];
        });
+       
+       it(@"Input array with multiple string", ^{
+           Math *obj = [[Math alloc] init];
+           NSNumber *val = [obj sumArray:@[@"", @"1", @"2"]];
+           [[val should] equal:@3];
+       });
    });
 });
 SPEC_END
