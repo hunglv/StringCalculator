@@ -10,6 +10,7 @@
 		289D54FD176065CD002C74E7 /* StringParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D54FC176065CD002C74E7 /* StringParser.m */; };
 		289D5500176065DA002C74E7 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D54FF176065DA002C74E7 /* Math.m */; };
 		289D550217606C20002C74E7 /* MathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D550117606C20002C74E7 /* MathTest.m */; };
+		289D550417606E8E002C74E7 /* StringParserTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 289D550317606E8E002C74E7 /* StringParserTest.m */; };
 		28B3BD8917533C6700C26110 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8817533C6700C26110 /* UIKit.framework */; };
 		28B3BD8B17533C6700C26110 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8A17533C6700C26110 /* Foundation.framework */; };
 		28B3BD8D17533C6700C26110 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28B3BD8C17533C6700C26110 /* CoreGraphics.framework */; };
@@ -44,6 +45,7 @@
 		289D54FE176065DA002C74E7 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
 		289D54FF176065DA002C74E7 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
 		289D550117606C20002C74E7 /* MathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathTest.m; sourceTree = "<group>"; };
+		289D550317606E8E002C74E7 /* StringParserTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringParserTest.m; sourceTree = "<group>"; };
 		28B3BD8517533C6700C26110 /* StringCalulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B3BD8817533C6700C26110 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		28B3BD8A17533C6700C26110 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -161,6 +163,7 @@
 				28B3BDAD17533C6700C26110 /* Supporting Files */,
 				28B3BDBD17533D6800C26110 /* StringCalculatorTest.m */,
 				289D550117606C20002C74E7 /* MathTest.m */,
+				289D550317606E8E002C74E7 /* StringParserTest.m */,
 			);
 			path = StringCalulatorTests;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				28B3BDBE17533D6800C26110 /* StringCalculatorTest.m in Sources */,
 				289D550217606C20002C74E7 /* MathTest.m in Sources */,
+				289D550417606E8E002C74E7 /* StringParserTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

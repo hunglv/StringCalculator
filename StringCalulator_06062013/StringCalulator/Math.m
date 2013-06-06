@@ -13,6 +13,9 @@
 -(NSNumber *)sumArray:(NSArray *)array {
     NSInteger val = 0;
     for (NSString *numberString in array) {
+        if ([numberString integerValue] > 1000) {
+            continue;
+        }
         val += [numberString integerValue];
     }
     return @(val);

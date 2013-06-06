@@ -23,6 +23,12 @@ describe(@"Math test", ^{
            NSNumber *val = [obj sumArray:@[@"", @"1", @"2"]];
            [[val should] equal:@3];
        });
+       
+       it(@"Input array with multiple with a string bigger than 1000", ^{
+           Math *obj = [[Math alloc] init];
+           NSNumber *val = [obj sumArray:@[@"", @"1", @"2", @"1001"]];
+           [[val should] equal:@3];
+       });
    });
 });
 SPEC_END
