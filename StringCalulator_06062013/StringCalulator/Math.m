@@ -11,7 +11,11 @@
 @implementation Math
 
 -(NSNumber *)sumArray:(NSArray *)array {
-    return @0;
+    NSInteger val = 0;
+    for (NSString *numberString in array) {
+        val += [numberString integerValue];
+    }
+    return @(val);
 }
 
 @end
